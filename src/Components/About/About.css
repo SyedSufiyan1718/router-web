@@ -1,0 +1,28 @@
+.about-us {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 12px 80px;
+}
+
+.about-us  h2 {
+    font-size: 28px;
+    color: brown;
+}
+.about-us  h4 {
+    font-size: 20px;
+    color: brown;
+    margin-bottom: 18px;
+}
+
+
+.about-us  p {
+    font-size: 14px;
+    color: rgb(55, 0, 0);
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: normal;
+}
