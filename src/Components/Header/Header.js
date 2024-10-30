@@ -5,6 +5,15 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate()
+  
+  function generate() {
+    const color1 = `#${Math.floor(Math.random() * 2365412).toString(16).padStart(6, 0)} `;
+    const color2 = `#${Math.floor(Math.random() * 1225362).toString(16).padStart(6, 0)} `;
+    // console.log(color1, color2);
+
+  
+    navigate('generate', {state:{color1, color2}})
+  }
   return (
     <>
       <header>
@@ -52,7 +61,7 @@ function Header() {
           </li>
         </ul>
         <div>
-          <button>
+          <button onClick={generate}>
             Generate
           </button>
         </div>

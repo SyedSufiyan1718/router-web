@@ -55,3 +55,14 @@ header button {
     box-shadow: 2px 4px 8px rgb(155, 155, 155);
     cursor: pointer;
 }
+
+@media only screen and (max-width: 950px) {
+    header {
+        align-items: end;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .logo-div span {
+        font-size: 20px;
+    }
+}
